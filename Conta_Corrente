@@ -1,1 +1,84 @@
+---> Conta_Corrente
+import javax.swing.JOptionPane;
 
+public class Projeto_Conta_Corrente {
+    public static void main(String[] args) {
+        Cliente cl = new Cliente();
+
+        cl.setNome(JOptionPane.showInputDialog("Digite o nome: "));
+        cl.setEmail(JOptionPane.showInputDialog("Digite um email: "));
+        cl.setCelular(JOptionPane.showInputDialog("Digite o número do celular: "));
+
+
+        JOptionPane.showMessageDialog(null, cl.getNome() +
+                "\n" + cl.getEmail() + "\n" + cl.getCelular());
+
+        //CLASSE CONTA
+        Conta_Corrente cc = new Conta_Corrente();
+        cc.setDeposito(Double.parseDouble(JOptionPane.showInputDialog
+                ("Digite o valor do depósito: ")));
+        cc.setSaque(Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do saque: ")));
+        //LÓGICA
+        cc. setSaldo(cc.getSaldo() + cc.getDeposito());
+        cc.setSaldo(cc.getSaldo() - cc.getSaque());
+
+        JOptionPane.showMessageDialog(null, cc.getSaldo(),
+                "O saldo é: ", JOptionPane.INFORMATION_MESSAGE);
+        System.exit(0);
+    }
+}
+
+---> Conta
+public class Conta_Corrente {
+        //VARIÁVEIS
+        private double saldo = 1000;
+        private double deposito;
+        private double saque;
+
+        //MÉTODOS GET e SET
+        public double getSaldo(){
+            return saldo;
+        }
+        public void setSaldo(double saldo){
+            this.saldo = saldo;
+        }
+        public double getDeposito(){
+            return deposito;
+        }
+        public void setDeposito(double deposito){
+            this.deposito = deposito;
+        }
+        public double getSaque(){
+            return saque;
+        }
+        public void setSaque(double saque){
+            this.saque = saque;
+        }
+}
+---> Cliente
+    public class Cliente {
+        //VARIÁVEIS
+        private String nome;
+        private String email;
+        private String celular;
+        //MÉTODOS GET E SET
+        public String getNome(){
+            return nome;
+        }
+        public void setNome(String nome){
+            this.nome = nome;
+        }
+        public String getEmail(){
+            return email;
+        }
+        public void setEmail(String email){
+            this.email = email;
+        }
+        public String getCelular(){
+            return celular;
+        }
+        public void setCelular(String celular){
+            this.celular = celular;
+        }
+
+}
