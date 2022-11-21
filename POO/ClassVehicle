@@ -10,14 +10,24 @@ class Vehicle {
 class VehicleDemo {
     public static void main(String[] args) {
         Vehicle minivan = new Vehicle();
-        int range;
+        Vehicle fiatuno = new Vehicle();
+        int range1, range2;
         // atribui valores a campos de minivan
         minivan.passengers = 8;
         minivan.fuelcap = 16;
         minivan.mpg = 21;
+
+        // atribui valores a campos de fiatuno
+        fiatuno.passengers = 4;
+        fiatuno.fuelcap = 15;
+        fiatuno.mpg = 18;
+
         // calcula a autonomia presumindo um tanque cheio de gasolina
-        range = minivan.fuelcap * minivan.mpg;
+        range1 = minivan.fuelcap * minivan.mpg;
+        range2 = fiatuno.fuelcap * fiatuno.mpg;
         System.out.println("Minivan can carry " + minivan.passengers +
-                " with a range of " + range + " KM");
+                " with a range of " + range1 + " KM");
+        System.out.println("Fiat Uno can carry " + fiatuno.passengers +
+                " with a range of " + range2 + " KM");
     }
 }
