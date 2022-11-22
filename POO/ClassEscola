@@ -1,0 +1,22 @@
+public class Escola {
+    static class Aluno {
+        String nome; // Nome dos alunos
+        String endereco; // Endereço dos alunos
+        int telefone; // Telefone dos alunos
+        String email; // Email dos alunos
+        int matricula; // Matricula dos alunos
+    }
+    static class Principal {
+        public static void main(String[] args){
+            Aluno aluno;
+            aluno = new Aluno();
+
+            // Cadastrando atributos
+            aluno.nome = "Chico";
+            aluno.endereco = "Rua joaquim nabuco";
+            aluno.telefone = 998254671;
+            aluno.email = "Chico@gmail.com";
+            aluno.matricula = 4612792;
+        }
+    }
+}
