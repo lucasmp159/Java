@@ -1,0 +1,22 @@
+package Desafio3;
+
+import javax.swing.*;
+
+public class Principal {
+    public static void main(String[] args){
+        Dados math = new Dados();
+        math.setBase(Integer.parseInt(JOptionPane.showInputDialog("Informe o valor da Base: ")));
+        JOptionPane.showConfirmDialog(null,"Sua base é: " + math.getBase());
+        math.setAltura(Integer.parseInt(JOptionPane.showInputDialog("Informe o valor da Altura: ")));
+        JOptionPane.showConfirmDialog(null,"Sua Altura é: " + math.getAltura());
+        math.setComprimento(Integer.parseInt(JOptionPane.showInputDialog("Informe o valor da Comprimento: ")));
+        JOptionPane.showConfirmDialog(null,"Sua Comprimento é: " + math.getComprimento());
+
+        calcularVolume(math);
+    }
+
+    public static void calcularVolume(Dados math){
+        int volume = (math.getBase() * math.getAltura() * math.getComprimento());
+        JOptionPane.showMessageDialog(null,"O volume é: " + volume);
+    }
+}
