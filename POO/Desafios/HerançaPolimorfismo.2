@@ -1,0 +1,10 @@
+package Desafio5;
+
+public class Principal {
+    public static void main(String[] args){
+        Cliente cliente1 = new Cliente(400, 500, 600);
+        System.out.println(cliente1.valorDebitado(500));
+        ClienteEspecial cliente2 = new ClienteEspecial(500, 1000, 500);
+        System.out.println(cliente2.valorDebitado(500));
+    }
+}
