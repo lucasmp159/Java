@@ -1,0 +1,12 @@
+package Desafio5;
+
+public class Cliente extends Conta_Corrente{
+    public Cliente(double _saque, double _deposito, double _saldo) {
+        super(_saque, _deposito, _saldo);
+
+    }
+    public double valorDebitado(double valorsaque){
+        return (valorsaque * 0.005);
+    }
+
+}
