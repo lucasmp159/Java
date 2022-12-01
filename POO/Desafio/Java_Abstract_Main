@@ -1,0 +1,12 @@
+package Abstract;
+
+public class Principal {
+    public static void main(String[] args){
+        //Para cadastrar ColaboradorFisico
+        ColabFisico obj = new ColabFisico();
+        obj.cadastramento();
+        //Para cadastrar Colaborador Jurídico desmarque. Obs: em construção.
+    //    ColabJuridica obj1 = new ColabJuridica();
+    //    obj1.cadastramento();
+    }
+}
