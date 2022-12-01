@@ -1,0 +1,26 @@
+package Abstract;
+import javax.swing.*;
+
+public class ColabFisico extends Cadastro{
+    public void cadastramento(){
+        setNome(JOptionPane.showInputDialog("Informe Nome: "));
+        setCPF(JOptionPane.showInputDialog("Informe CPF: "));
+        setRG(JOptionPane.showInputDialog("Informe RG: "));
+        setIdade(Integer.parseInt(JOptionPane.showInputDialog("Informe a idade: ")));
+        setLogradouro(JOptionPane.showInputDialog("Informe o logradouro: "));
+        setNumero(Integer.parseInt(JOptionPane.showInputDialog("Numero: ")));
+        setBairro(JOptionPane.showInputDialog("Bairro: "));
+        setCidade(JOptionPane.showInputDialog("Cidade: "));
+        setUnidade_federacao(JOptionPane.showInputDialog("Unidade da Federação: "));
+        setTelefone(Integer.parseInt(JOptionPane.showInputDialog("Informe o Telefone: ")));
+        setEmail(JOptionPane.showInputDialog("Email: "));
+        setTitulacao(JOptionPane.showInputDialog("Titulação: "));
+        setDisciplinas(JOptionPane.showInputDialog("Disciplina: "));
+        System.out.println("Nome: " + getNome() + "\nCPF: " + getCPF() + "\nRG: "
+                + getRG() + "\nIdade: " + getIdade() + "\nLogradouro: " + getLogradouro()
+                + "\nNumero: " + getNumero() + "\nBairro" + getBairro() + "\nCidade: "
+                + getCidade() + "\nUnidade da Federação: " + getUnidade_federacao()
+                + "\nTelefone: " + getTelefone() + "\nEmail: " + getEmail() + "\nTitulação: "
+                + getTitulacao() + "\nDisciplinas: " + getDisciplinas());
+    }
+}
