@@ -1,0 +1,23 @@
+package Abstract;
+import javax.swing.*;
+
+public class ColabJuridica extends Cadastro{
+    public void cadastramento(){
+        setRazao_social(JOptionPane.showInputDialog("Informe a Razão Social: "));
+        setNome_fantasia(JOptionPane.showInputDialog("Informe o Nome Fantasia: "));
+        setInscricao_municipal(Integer.parseInt(JOptionPane.showInputDialog("Informe o número da Inscrição municipal: ")));
+        setInscricao_estadual(Integer.parseInt(JOptionPane.showInputDialog("Informe o número da inscrição municipal: ")));
+        setCnpj(Integer.parseInt(JOptionPane.showInputDialog("Informe o cnpj: ")));
+        setLogradouro(JOptionPane.showInputDialog("Informe o logradouro: "));
+        setNumero(Integer.parseInt(JOptionPane.showInputDialog("Numero: ")));
+        setBairro(JOptionPane.showInputDialog("Bairro: "));
+        setCidade(JOptionPane.showInputDialog("Cidade: "));
+        setUnidade_federacao(JOptionPane.showInputDialog("Unidade da Federação: "));
+        setTelefone(Integer.parseInt(JOptionPane.showInputDialog("Informe o Telefone: ")));
+        setEmail(JOptionPane.showInputDialog("Email: "));
+        setWebsite(JOptionPane.showInputDialog("Informe website: "));
+        setDisciplinas(JOptionPane.showInputDialog("Informe disciplina: "));
+        System.out.println("\n Razão social: " + getRazao_social() +
+                "\n Nome Fantasia" + getNome_fantasia());
+    }
+}
