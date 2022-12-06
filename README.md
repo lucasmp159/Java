@@ -1,2 +1,2 @@
 # Java_Tests
---> This repository contains my tests and learning using Java Language.
+--> This repository contains my tests and some exercises using Java Language.
