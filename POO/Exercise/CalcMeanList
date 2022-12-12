@@ -23,11 +23,9 @@ public class Principal {
 ----------------------------------------------------
 package provaPOO.Arraylist2.src;
 
-
 import java.util.*;
 
 public class ArrayListas {
-	
 	
 	public double mean(ArrayList<Integer> lista) {
 		
@@ -37,7 +35,7 @@ public class ArrayListas {
 			s += integer;
 		}
 		double resultado = s/n;
-		System.out.println("Resultado: " + resultado);
+		System.out.println("Resultado: " + String.format("%.2f", resultado));
 
 		return resultado;
 	}
