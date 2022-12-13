@@ -1,0 +1,30 @@
+package primos;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Principal {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Digite um número");
+        int numero = scan.nextInt();
+        ArrayList<Integer> vetor = new ArrayList<>();
+        if (numero <=1){
+            System.out.println("Nenhum número primo");
+        }else if(numero == 2){
+            vetor.add(2);
+        } else {
+            for (int i = 2; i <= numero; i++){
+                for (int j = i - 1; j >= 1; j--){
+                    if (j == 1){
+                        vetor.add(i);
+                    } else {
+                        if(i % j == 0){
+                            break;
+                        }
+                    }
+                }
+            }
+            System.out.println("Os números primos serão: " + vetor);
+        }
+    }
+}
